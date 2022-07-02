@@ -2,7 +2,11 @@
   "hosting": {
     "public": "public",
     "appAssociation": "AUTO",
-    "rewrites": [ { "source": "/**", "dynamicLinks": true } ],
+    "rewrites": [ 
+	{ "source": "/**", "dynamicLinks": true },
+	{ "source": "/verification/**", "dynamicLinks": true },
+	{ "source": "/resetpassword/**", "dynamicLinks": true }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
